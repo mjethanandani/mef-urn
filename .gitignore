@@ -1,0 +1,10 @@
+draft/draft-*.*
+bin/*
+draft/Diff_*
+logs/*
+
+*~
+#*#
+.#*
+
+.DS_Store
