@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="rfc7991bis.rnc"?>
+<!DOCTYPE rfc [
+  <!ENTITY nbsp    "&#160;">
+  <!ENTITY zwsp   "&#8203;">
+  <!ENTITY nbhy   "&#8209;">
+  <!ENTITY wj     "&#8288;">
+]>
+<rfc
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  category="info" 
+  docName="draft-mc-mplify-urn-latest" 
+  ipr="trust200902"
+  obsoletes=""
+  updates=""
+  consensus="true"
+  submissionType="IETF"
+  xml:lang="en"
+  version="3">
+  <?rfc toc="yes"?>
+  <front>
+    <title abbrev="Namespace for MPLIFY">URN Namespace for MPLIFY
+    Documents</title>
+
+    <author fullname="Mahesh Jethanandani" initials="M."
+            surname="Jethanandani">
+      <organization>Arrcus, Inc</organization>
+
+      <address>
+        <email>mjethanandani@gmail.com</email>
+        <uri/>
+      </address>
+    </author>
+
+    <date/>
+
+    <abstract>
+      <t>
+	This document describes the Namespace Identifier (NID)
+	'mplify' for Uniform Resource Names (URNs) used to identify
+	resources published by MPLIFY Alliance. MPLIFY specifies and manages
+	resources that utilize this URN identification model. This URN
+	namespace will complement the existing "mef" URN namespace
+	registered in RFC 7818.  Management activities for these and
+	other resources types are handled by the manager of the Mplify
+	Assigned Names and Numbers (MANN) registry.
+      </t>
+    </abstract>
+  </front>
+
+  <middle>
+    <section title="Introduction">
+      <t>
+	Mplify Alliance (https://www.mplify.net/), formerly MEF Forum,
+	is a global alliance of enterprises, service providers, cloud
+	providers, data center operators, technology providers, and
+	systems integrators, working together to accelerate the
+	AI-powered digital economy through standardization,
+	automation, certification, and collaboration.
+      </t>
+
+      <t>
+	Mplify is the defining body for Carrier Ethernet, Lifecycle
+	Service Orchestration (LSO) APIs, and certified SASE and
+	SD-WAN.  Mplify has developed the global blueprint for
+	Network-as-a-Service (NaaS) that is empowering the industry to
+	innovate, interoperate, and scale trusted network services
+	across a global ecosystem.
+      </t>
+      <t>
+	In June 2025, MEF Forum became Mplify Alliance.  The "mplify"
+	URN namespace is being registered to provide persistent,
+	unique identifiers for resources published under the Mplify
+	Alliance brand, complementing the existing "mef" URN namespace
+	registered in <xref target="RFC7818">URN Namespace for MEF
+	Documents</xref>. To ensure that this namespace's uniqueness
+	is absolute, a registration of a specific Unified Resource
+	Name (URN) <xref target="RFC2141">URN Syntax</xref> Namespace
+	Identifier (NID) for use by MPLIFY is being specified in this
+	document.
+      </t>
+
+      <t>
+	The existing "mef" URN namespace remains valid.  URNs
+	previously assigned under "urn:mef:*" continue to be valid and
+	will not be reassigned or retired.  New resources will be
+	assigned URNs under the "mplify" namespace.
+      </t>
+      <section title="Terminology">
+        <table>
+          <thead>
+            <tr>
+              <th>Acronym</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CE</td>
+              <td>Carrier Ethernet</td>
+            </tr>
+            <tr>
+              <td>MANN</td>
+              <td>MEF Assigned Names and Numbers</td>
+            </tr>
+            <tr>
+              <td>MEF</td>
+              <td>MPLIFY</td>
+            </tr>
+            <tr>
+              <td>NID</td>
+              <td>Namespace Identifier</td>
+            </tr>
+            <tr>
+              <td>NSS</td>
+              <td>Namespace Specific String</td>
+            </tr>
+            <tr>
+              <td>RDS</td>
+              <td>Resolution Discovery System</td>
+            </tr>
+            <tr>
+              <td>URN</td>
+              <td>Uniform Resource Name</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section title="URN Specification for MPLIFY">
+      <t>Namespace ID:</t>
+      <ul empty="true">
+        <li>mplify</li>
+      </ul>
+
+      <t>Registration information:</t>
+      <ul empty="true">
+        <li>registration version number: 1</li>
+        <li>
+          registration date: YYYY-MM-DD (Note to RFC Editor: Please add the
+          registration date when this request gets accepted and remove this
+          instruction)
+        </li>
+      </ul>
+
+      <t>Declared registrant of the namespace:</t>
+      <ul empty="true">
+        <li>
+          <t>Registering organization</t>
+          <ul empty="true">
+            <li>Name: Mplify Alliance (formerly MEF Forum)</li>
+            <li>
+              Address: 12130 Millennium Dr, Suite 300, Los Angeles
+              CA 90094 USA
+            </li>
+          </ul>
+        </li>
+        <li>
+          <t>Designated contact:</t>
+          <ul empty="true">
+            <li>Role: Manager, Mplify Namespace</li>
+            <li>Email: namespace@mplify.net</li>
+          </ul>
+        </li>
+      </ul>
+
+      <t>Declaration of syntactic structure:</t>
+      <ul empty="true">
+        <li>
+          The syntax of namespace specific strings for the 'mef'
+          namespace is &lt;NSS&gt; in RFC 2141.
+        </li>
+      </ul>
+
+      <t>Relevant ancillary documentation:</t>
+      <ul empty="true">
+        <li>
+          Mplify publishes information regarding the registered
+          resources in the Mplify Assigned Names and Numbers
+          (MANN) registry (https://www.mplify.net/MANN).)
+        </li>
+      </ul>
+
+      <t>Identifier uniqueness considerations:</t>
+      <ul empty="true">
+        <li>
+          Mplify will manage resource classes using the "mplify" NID
+          and will be the authority for managing resources and
+          associated subsequent strings. Mplify is expected to
+          guarantee the uniqueness of the strings themselves, or it
+          may permit secondary responsibility for certain defined
+          resources.
+        </li>
+        <li>
+          Mplify could allow for use of experimental type values for
+          testing purposes only. Note that using experimental types
+          may create collision as multiple users may use the same
+          values for different resources and specific strings.
+        </li>
+      </ul>
+
+      <t>Identifier persistence considerations:</t>
+      <ul empty="true">
+        <li>
+          Mplify will update the Mplify Assigned Names and Numbers (MANN)
+          registry to document the registered resources that will
+          use the "mplify" NID.
+        </li>
+      </ul>
+
+      <t>Process of identifier assignment:</t>
+      <ul empty="true">
+        <li>
+          Assignment of a URN from the Mplify namespace will be
+          documented as part of the Mplify Assigned Names and Numbers
+          (MANN) registry.
+        </li>
+      </ul>
+
+      <t>Process of identifier resolution:</t>
+      <ul empty="true">
+        <li>
+          The namespace is not listed with an Resolution Discovery
+          System (RDS). Therefore this process is not relevant.
+        </li>
+      </ul>
+
+      <t>Rules for Lexical Equivalence:</t>
+      <ul empty="true">
+        <li>The entire URN is case-insensitive.</li>
+      </ul>
+
+      <t>Conformance with URN Syntax:</t>
+      <ul empty="true">
+        <li>No special considerations</li>
+      </ul>
+
+      <t>Validation mechanism:</t>
+      <ul empty="true">
+        <li>
+          None specified. URN assignment will be handled by
+          procedures implemented in support of Mplify activities.
+        </li>
+      </ul>
+
+      <t>Scope:</t>
+      <ul empty="true">
+        <li>Global</li>
+      </ul>
+    </section>
+
+    <section title="Examples">
+      <t>
+        The following are examples of URNs that Mplify is looking to assign:
+      </t>
+      <ul empty="true">
+        <li>urn:mplify:yang:mef-services</li>
+        <li>urn:mplify:yang:mef-interfaces</li>
+      </ul>
+    </section>
+
+    <section title="Security Considerations">
+      <t>
+	There are no additional security considerations other than
+	those normally associated with the use and resolution of URNs
+	in general, which are described in <xref
+	target="RFC1737">Function Requirements for URN</xref>, <xref
+	target="RFC2141">URN Syntax</xref>.
+      </t>
+    </section>
+
+    <section anchor="IANA" title="IANA Considerations">
+      <t>
+	This document adds a new entry ("mplify") in the urn-namespace
+	registry.  This is the defining document. When published, the
+	entry can be found in the "Uniform Resource Names (URN)
+	Namespaces" registry available from the IANA site
+	(https://www.iana.org) and any associated mirrors.
+      </t>
+    </section>
+  </middle>
+
+  <back>
+    <references title="Normative References">
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.1737.xml"/>
+        <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2141.xml"/>
+        <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7818.xml"/>
+    </references>
+  </back>
+</rfc>
