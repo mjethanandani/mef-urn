@@ -19,8 +19,7 @@
   version="3">
   <?rfc toc="yes"?>
   <front>
-    <title abbrev="Namespace for MPLIFY">URN Namespace for MPLIFY
-    Documents</title>
+    <title abbrev="Namespace for Mplify">URN Namespace for Mplify Documents</title>
 
     <author fullname="Mahesh Jethanandani" initials="M."
             surname="Jethanandani">
@@ -38,10 +37,10 @@
       <t>
 	This document describes the Namespace Identifier (NID)
 	'mplify' for Uniform Resource Names (URNs) used to identify
-	resources published by MPLIFY Alliance. MPLIFY specifies and manages
+	resources published by Mplify Alliance. Mplify specifies and manages
 	resources that utilize this URN identification model. This URN
 	namespace will complement the existing "mef" URN namespace
-	registered in RFC 7818.  Management activities for these and
+	registered in RFC 7818. Management activities for these and
 	other resources types are handled by the manager of the Mplify
 	Assigned Names and Numbers (MANN) registry.
       </t>
@@ -62,13 +61,13 @@
       <t>
 	Mplify is the defining body for Carrier Ethernet, Lifecycle
 	Service Orchestration (LSO) APIs, and certified SASE and
-	SD-WAN.  Mplify has developed the global blueprint for
+	SD-WAN. Mplify has developed the global blueprint for
 	Network-as-a-Service (NaaS) that is empowering the industry to
 	innovate, interoperate, and scale trusted network services
 	across a global ecosystem.
       </t>
       <t>
-	In June 2025, MEF Forum became Mplify Alliance.  The "mplify"
+	In June 2025, MEF Forum became Mplify Alliance. The "mplify"
 	URN namespace is being registered to provide persistent,
 	unique identifiers for resources published under the Mplify
 	Alliance brand, complementing the existing "mef" URN namespace
@@ -76,14 +75,14 @@
 	Documents</xref>. To ensure that this namespace's uniqueness
 	is absolute, a registration of a specific Unified Resource
 	Name (URN) <xref target="RFC2141">URN Syntax</xref> Namespace
-	Identifier (NID) for use by MPLIFY is being specified in this
+	Identifier (NID) for use by Mplify is being specified in this
 	document.
       </t>
 
       <t>
-	The existing "mef" URN namespace remains valid.  URNs
+	The existing "mef" URN namespace remains valid. URNs
 	previously assigned under "urn:mef:*" continue to be valid and
-	will not be reassigned or retired.  New resources will be
+	will not be reassigned or retired. New resources will be
 	assigned URNs under the "mplify" namespace.
       </t>
       <section title="Terminology">
@@ -124,7 +123,7 @@
       </section>
     </section>
 
-    <section title="URN Specification for MPLIFY">
+    <section title="URN Specification for Mplify">
       <t>Namespace ID:</t>
       <ul empty="true">
         <li>mplify</li>
@@ -145,7 +144,7 @@
         <li>
           <t>Registering organization</t>
           <ul empty="true">
-            <li>Name: Mplify Alliance (formerly MEF Forum)</li>
+            <li>Name: Mplify Alliance</li>
             <li>
               Address: 12130 Millennium Dr, Suite 300, Los Angeles
               CA 90094 USA
@@ -164,7 +163,7 @@
       <t>Declaration of syntactic structure:</t>
       <ul empty="true">
         <li>
-          The syntax of namespace specific strings for the 'mef'
+          The syntax of namespace specific strings for the 'mplify'
           namespace is &lt;NSS&gt; in RFC 2141.
         </li>
       </ul>
@@ -174,7 +173,7 @@
         <li>
           Mplify publishes information regarding the registered
           resources in the Mplify Assigned Names and Numbers
-          (MANN) registry (https://www.mplify.net/MANN).)
+          (MANN) registry (https://www.mplify.net/MANN).
         </li>
       </ul>
 
@@ -251,8 +250,8 @@
         The following are examples of URNs that Mplify is looking to assign:
       </t>
       <ul empty="true">
-        <li>urn:mplify:yang:mef-services</li>
-        <li>urn:mplify:yang:mef-interfaces</li>
+        <li>urn:mplify:lso:spec:product</li>
+        <li>urn:mplify:lso:spec:service</li>
       </ul>
     </section>
 
@@ -269,7 +268,7 @@
     <section anchor="IANA" title="IANA Considerations">
       <t>
 	This document adds a new entry ("mplify") in the urn-namespace
-	registry.  This is the defining document. When published, the
+	registry. This is the defining document. When published, the
 	entry can be found in the "Uniform Resource Names (URN)
 	Namespaces" registry available from the IANA site
 	(https://www.iana.org) and any associated mirrors.
