@@ -95,10 +95,6 @@
           </thead>
           <tbody>
             <tr>
-              <td>CE</td>
-              <td>Carrier Ethernet</td>
-            </tr>
-            <tr>
               <td>MANN</td>
               <td>Mplify Assigned Names and Numbers</td>
             </tr>
