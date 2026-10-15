@@ -3,9 +3,9 @@
 #
 # Does the user have all the IETF published models.
 #
-if [ ! -d ../bin/yang-parameters ]; then
-   rsync -avz --delete rsync.iana.org::assignments/yang-parameters ../bin/
-fi
+# if [ ! -d ../bin/yang-parameters ]; then
+#   rsync -avz --delete rsync.iana.org::assignments/yang-parameters ../bin/
+# fi
 
 if [ ! -f ../bin/ietf-*\@$(date +%Y-%m-%d).yang ]; then
     echo "No files found matching ../bin/ietf-*@$(date +%Y-%m-%d).yang"

@@ -48,7 +48,7 @@ $(next).xml: $(draft).xml
 # Sample lines for YANG modules if the draft has any
 # sed -e"s/YYYY-MM-DD/$(shell date +%Y-%m-%d)/" ../src/yang/ietf-bgp-capabilities.yang > ../bin/submodules/ietf-bgp-capabilities\@$(shell date +%Y-%m-%d).yang
 
-	cd ../src; python download-dependent-models.py; ./validate-and-gen-trees.sh; cd ..;
+#	cd ../src; python download-dependent-models.py; ./validate-and-gen-trees.sh; cd ..;
 	../src/insert-figures.sh $@ > tmp; mv tmp $@
 
 	-mkdir -p ../bin
