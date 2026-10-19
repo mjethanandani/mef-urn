@@ -31,6 +31,16 @@
       </address>
     </author>
 
+    <author fullname="Charles Eckel" initials="C."
+            surname="Eckel">
+      <organization>Cisco Systems, Inc</organization>
+
+      <address>
+        <email>eckelcu@cisco.com</email>
+        <uri/>
+      </address>
+    </author>
+
     <date/>
 
     <abstract>
