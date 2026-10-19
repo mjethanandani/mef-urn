@@ -74,9 +74,9 @@
 	registered in <xref target="RFC7818">URN Namespace for MEF
 	Documents</xref>. To ensure that this namespace's uniqueness
 	is absolute, a registration of a specific Unified Resource
-	Name (URN) <xref target="RFC2141">URN Syntax</xref> Namespace
-	Identifier (NID) for use by Mplify is being specified in this
-	document.
+	Name (URN) <xref target="RFC8141">Uniform Resource Nmaes
+	(URNs)</xref> Namespace Identifier (NID) for use by Mplify is
+	being specified in this document.
       </t>
 
       <t>
@@ -120,22 +120,25 @@
     </section>
 
     <section title="URN Specification for Mplify">
-      <t>Namespace ID:</t>
+      <t>Namespace Identifier:</t>
       <ul empty="true">
         <li>mplify</li>
       </ul>
 
-      <t>Registration information:</t>
+      <t>Version:</t>
       <ul empty="true">
-        <li>registration version number: 1</li>
+        <li>1</li>
+      </ul>
+      <t>Date:</t>
+      <ul empty="true">
         <li>
-          registration date: YYYY-MM-DD (Note to RFC Editor: Please add the
-          registration date when this request gets accepted and remove this
-          instruction)
+          registration date: YYYY-MM-DD (Note to RFC Editor: Please
+          add the registration date when this request gets accepted
+          and remove this instruction)
         </li>
       </ul>
 
-      <t>Declared registrant of the namespace:</t>
+      <t>Registrant:</t>
       <ul empty="true">
         <li>
           <t>Registering organization</t>
@@ -156,51 +159,18 @@
         </li>
       </ul>
 
-      <t>Declaration of syntactic structure:</t>
+      <t>Purpose:</t>
+      <ul empty="true">
+      </ul>
+
+      <t>Syntax:</t>
       <ul empty="true">
         <li>
           The syntax of namespace specific strings for the 'mplify'
-          namespace is &lt;NSS&gt; in RFC 2141.
+          namespace is &lt;NSS&gt; in RFC 8141.
         </li>
       </ul>
-
-      <t>Relevant ancillary documentation:</t>
-      <ul empty="true">
-        <li>
-          Mplify publishes information regarding the registered
-          resources in the Mplify Assigned Names and Numbers
-          (MANN) registry (https://www.mplify.net/MANN).
-        </li>
-      </ul>
-
-      <t>Identifier uniqueness considerations:</t>
-      <ul empty="true">
-        <li>
-          Mplify will manage resource classes using the "mplify" NID
-          and will be the authority for managing resources and
-          associated subsequent strings. Mplify is expected to
-          guarantee the uniqueness of the strings themselves, or it
-          may permit secondary responsibility for certain defined
-          resources.
-        </li>
-        <li>
-          Mplify could allow for use of experimental type values for
-          testing purposes only. Note that using experimental types
-          may create collision as multiple users may use the same
-          values for different resources and specific strings.
-        </li>
-      </ul>
-
-      <t>Identifier persistence considerations:</t>
-      <ul empty="true">
-        <li>
-          Mplify will update the Mplify Assigned Names and Numbers (MANN)
-          registry to document the registered resources that will
-          use the "mplify" NID.
-        </li>
-      </ul>
-
-      <t>Process of identifier assignment:</t>
+      <t>Assignment:</t>
       <ul empty="true">
         <li>
           Assignment of a URN from the Mplify namespace will be
@@ -208,36 +178,32 @@
           (MANN) registry.
         </li>
       </ul>
-
-      <t>Process of identifier resolution:</t>
+      <t>Security and Privacy:</t>
+      <ul empty="true">
+      </ul>
+      <t>Interoperability:</t>
+      <ul empty="true">
+      </ul>
+      <t>Resolution:</t>
       <ul empty="true">
         <li>
           The namespace is not listed with an Resolution Discovery
           System (RDS). Therefore this process is not relevant.
         </li>
       </ul>
-
-      <t>Rules for Lexical Equivalence:</t>
-      <ul empty="true">
-        <li>The entire URN is case-insensitive.</li>
-      </ul>
-
-      <t>Conformance with URN Syntax:</t>
-      <ul empty="true">
-        <li>No special considerations</li>
-      </ul>
-
-      <t>Validation mechanism:</t>
+      <t>Documentation:</t>
       <ul empty="true">
         <li>
-          None specified. URN assignment will be handled by
-          procedures implemented in support of Mplify activities.
+          Mplify publishes information regarding the registered
+          resources in the Mplify Assigned Names and Numbers
+          (MANN) registry (https://www.mplify.net/MANN).
         </li>
       </ul>
-
-      <t>Scope:</t>
+      <t>Additional Information:</t>
       <ul empty="true">
-        <li>Global</li>
+      </ul>
+      <t>Revision Information:</t>
+      <ul empty="true">
       </ul>
     </section>
 
@@ -257,7 +223,7 @@
 	those normally associated with the use and resolution of URNs
 	in general, which are described in <xref
 	target="RFC1737">Function Requirements for URN</xref>, <xref
-	target="RFC2141">URN Syntax</xref>.
+	target="RFC8141">Uniform Resource Names (URNs)</xref>.
       </t>
     </section>
 
@@ -274,9 +240,11 @@
 
   <back>
     <references title="Normative References">
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8141.xml"/>
+    </references>
+    <references title="Informative References">
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.1737.xml"/>
-        <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2141.xml"/>
-        <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7818.xml"/>
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7818.xml"/>
     </references>
   </back>
 </rfc>
