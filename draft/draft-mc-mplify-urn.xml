@@ -41,14 +41,14 @@
 	resources that utilize this URN identification model. This URN
 	namespace will complement the existing "mef" URN namespace
 	registered in RFC 7818. Management activities for these and
-	other resources types are handled by the manager of the Mplify
+	other resource types are handled by the manager of the Mplify
 	Assigned Names and Numbers (MANN) registry.
       </t>
     </abstract>
   </front>
 
   <middle>
-    <section title="Introduction">
+    <section anchor="intro" title="Introduction">
       <t>
 	Mplify Alliance (https://www.mplify.net/), formerly MEF Forum,
 	is a global alliance of enterprises, service providers, cloud
@@ -73,8 +73,8 @@
 	Alliance brand, complementing the existing "mef" URN namespace
 	registered in <xref target="RFC7818">URN Namespace for MEF
 	Documents</xref>. To ensure that this namespace's uniqueness
-	is absolute, a registration of a specific Unified Resource
-	Name (URN) <xref target="RFC8141">Uniform Resource Nmaes
+	is absolute, a registration of a specific Uniform Resource
+	Name (URN) <xref target="RFC8141">Uniform Resource Names
 	(URNs)</xref> Namespace Identifier (NID) for use by Mplify is
 	being specified in this document.
       </t>
@@ -82,8 +82,12 @@
       <t>
 	The existing "mef" URN namespace remains valid. URNs
 	previously assigned under "urn:mef:*" continue to be valid and
-	will not be reassigned or retired. New resources will be
-	assigned URNs under the "mplify" namespace.
+	will not be reassigned or retired. No new assignments will be
+	made under "mef". Apart from the exception for YANG modules
+	described in <xref target="urn-spec"/>, new resources, and new
+	versions of resources previously identified under "mef", will
+	be assigned URNs under the "mplify" namespace. A resource is
+	never identified by both a "mef" and an "mplify" URN.
       </t>
       <section title="Terminology">
         <table>
@@ -107,10 +111,6 @@
               <td>Namespace Specific String</td>
             </tr>
             <tr>
-              <td>RDS</td>
-              <td>Resolution Discovery System</td>
-            </tr>
-            <tr>
               <td>URN</td>
               <td>Uniform Resource Name</td>
             </tr>
@@ -119,7 +119,7 @@
       </section>
     </section>
 
-    <section title="URN Specification for Mplify">
+    <section anchor="urn-spec" title="URN Specification for Mplify">
       <t>Namespace Identifier:</t>
       <ul empty="true">
         <li>mplify</li>
@@ -141,7 +141,7 @@
       <t>Registrant:</t>
       <ul empty="true">
         <li>
-          <t>Registering organization</t>
+          <t>Registering organization:</t>
           <ul empty="true">
             <li>Name: Mplify Alliance</li>
             <li>
@@ -161,59 +161,228 @@
 
       <t>Purpose:</t>
       <ul empty="true">
+        <li>
+          <t>
+            The "mplify" namespace identifies resources published by
+            Mplify Alliance. These include:
+          </t>
+          <ul>
+            <li>Lifecycle Service Orchestration (LSO) API
+            specifications, product schemas, and product specification
+            identifiers;</li>
+            <li>YANG modules and data models;</li>
+            <li>certification programs and artifacts;</li>
+            <li>service definitions and standards; and</li>
+            <li>any other resources that require managed, persistent
+            identification as part of Mplify Alliance activities.</li>
+          </ul>
+          <t>
+            The scope of the namespace is global. URNs in this
+            namespace are used by service providers, enterprises,
+            technology vendors, and other organizations that implement
+            Mplify specifications, for example as identifiers in LSO
+            API payloads and in YANG-based network management. A formal
+            namespace gives these implementers persistent, globally
+            unique identifiers that cannot collide with identifiers
+            defined by other organizations. Software that implements
+            Mplify specifications uses the URNs as identifiers and does
+            not need to resolve them.
+          </t>
+          <t>
+            The namespace complements the "mef" namespace <xref
+            target="RFC7818"/>, which identifies resources published
+            before the "mplify" namespace was registered. The
+            relationship between the two namespaces is described under
+            "Assignment" and "Interoperability" below. No resolution
+            service is defined for the namespace (see "Resolution"
+            below). URNs in this namespace are used in Mplify Alliance
+            standards; the namespace is not part of an IETF standard.
+          </t>
+        </li>
       </ul>
 
       <t>Syntax:</t>
       <ul empty="true">
         <li>
-          The syntax of namespace specific strings for the 'mplify'
-          namespace is &lt;NSS&gt; in RFC 8141.
+          <t>
+            The syntax of namespace-specific strings (NSSs) for the
+            "mplify" namespace is &lt;NSS&gt; as defined in <xref
+            target="RFC8141" section="2" sectionFormat="of"/>.
+          </t>
+          <t>
+            The NSS is hierarchical, with segments separated by colons.
+            The first segment identifies a resource class, such as
+            "lso" or "yang". The structure below the first segment is
+            defined for each resource class and documented in the MANN
+            registry.
+          </t>
+          <t>
+            Resources that are published in versions, such as LSO
+            product specifications, have a separate URN for each
+            version. The NSS of that URN contains a version segment
+            consisting of the letter "v" followed by three non-negative
+            integers separated by periods (major.minor.patch), for
+            example "v2.0.0". The version segment may be followed by
+            further segments that identify parts of that version. For
+            such resources, an NSS without the version segment (for
+            example, "lso:spec:sonata:access-eline-ovc") is a level in
+            the registry hierarchy and does not itself identify a
+            resource.
+          </t>
+          <t>
+            In addition to the URN-equivalence rules in <xref
+            target="RFC8141" section="3" sectionFormat="of"/>, the
+            entire URN, including the NSS, is case-insensitive. Mplify
+            Alliance will not assign two URNs that differ only in case.
+          </t>
+          <t>
+            There are no special character encoding rules and no
+            special considerations for conformance with the URN syntax.
+            This registration does not define semantics for
+            r-components, q-components, or f-components; they are
+            therefore undefined for this namespace.
+          </t>
         </li>
       </ul>
+
       <t>Assignment:</t>
       <ul empty="true">
         <li>
-          Assignment of a URN from the Mplify namespace will be
-          documented as part of the Mplify Assigned Names and Numbers
-          (MANN) registry.
+          <t>
+            URNs in the "mplify" namespace are assigned by Mplify
+            Alliance, which is the authority for the namespace.
+            Assignment is not open to the public: URNs are assigned as
+            part of the publication of Mplify Alliance specifications,
+            standards, data models, and certification programs, in
+            accordance with the procedures that Mplify Alliance defines
+            for each resource class. Mplify Alliance may delegate
+            assignment for specific resource classes to its working
+            groups, committees, or partner organizations, but retains
+            authority over the namespace.
+          </t>
+          <t>
+            Every assigned URN is recorded in the Mplify Assigned Names
+            and Numbers (MANN) registry
+            (https://www.mplify.net/MANN/), which Mplify Alliance uses
+            to guarantee that each URN is unique. Once assigned, a URN
+            is never reassigned to a different resource, even if the
+            resource is deprecated or withdrawn.
+          </t>
+          <t>
+            URNs assigned under the "mef" namespace <xref
+            target="RFC7818"/> remain valid, are never reassigned, and
+            are not re-issued under the "mplify" namespace. When a new
+            version of a resource identified under "urn:mef:" is
+            published, it is assigned a "urn:mplify:" URN whose NSS
+            matches the NSS of the original except for the version
+            segment, which continues the version numbering used under
+            "mef".
+          </t>
+          <t>
+            YANG modules are an exception. <xref target="RFC7950"
+            section="11" sectionFormat="of"/> does not allow the
+            namespace of a published module to change, so a module
+            whose namespace was assigned under "urn:mef:yang:" keeps
+            that namespace in all later revisions. Only new YANG
+            modules are assigned "urn:mplify:yang:" namespaces.
+          </t>
         </li>
       </ul>
+
       <t>Security and Privacy:</t>
       <ul empty="true">
+        <li>
+          <t>
+            There are no additional security considerations other than
+            those normally associated with the use and resolution of
+            URNs in general, which are described in <xref
+            target="RFC8141"/>.
+          </t>
+          <t>
+            URNs in the "mplify" namespace identify publicly available
+            specifications, data models, and related resources. The
+            URNs do not contain personal or otherwise private
+            information, and Mplify Alliance does not assign URNs based
+            on information that could be used to track individuals.
+            Because the identified resources are public, directory
+            harvesting is not a concern.
+          </t>
+        </li>
       </ul>
+
       <t>Interoperability:</t>
       <ul empty="true">
+        <li>
+          <t>
+            URNs in the "mef" and "mplify" namespaces are never
+            URN-equivalent (<xref target="RFC8141" section="3"
+            sectionFormat="of"/>), and no version of a resource is
+            identified in both namespaces. A "urn:mplify:" URN that
+            differs from a "urn:mef:" URN only in its NID and version
+            segment identifies a later version of the same resource;
+            the MANN registry records this lineage. Software that
+            relies on exact URN matching treats the two URNs as
+            distinct identifiers.
+          </t>
+        </li>
       </ul>
+
       <t>Resolution:</t>
       <ul empty="true">
         <li>
-          The namespace is not listed with an Resolution Discovery
-          System (RDS). Therefore this process is not relevant.
+          No resolution mechanism is intended or anticipated for this
+          namespace at this time, and Mplify Alliance does not operate
+          or recommend a resolution service. Information about the
+          resources identified by "urn:mplify:" URNs is published in
+          the MANN registry (https://www.mplify.net/MANN/). No
+          semantics are defined for r-components.
         </li>
       </ul>
+
       <t>Documentation:</t>
       <ul empty="true">
         <li>
-          Mplify publishes information regarding the registered
-          resources in the Mplify Assigned Names and Numbers
-          (MANN) registry (https://www.mplify.net/MANN).
+          Mplify Alliance publishes information about
+          assigned URNs in the MANN registry
+          (https://www.mplify.net/MANN/) and publishes its
+          specifications at https://www.mplify.net/. The "mef"
+          namespace is documented in <xref target="RFC7818"/>.
         </li>
       </ul>
+
       <t>Additional Information:</t>
       <ul empty="true">
+        <li>
+          Mplify Alliance was known as MEF Forum until June 2025, and
+          the "mef" namespace <xref target="RFC7818"/> was registered
+          under that name. The "mplify" namespace reflects the new
+          organizational identity while preserving the validity and
+          persistence of all existing "urn:mef:" assignments. The MANN
+          registry is the authoritative source for assignments in both
+          namespaces.
+        </li>
       </ul>
+
       <t>Revision Information:</t>
       <ul empty="true">
+        <li>Not applicable; this is the initial registration.</li>
       </ul>
     </section>
 
     <section title="Examples">
       <t>
-        The following are examples of URNs that Mplify is looking to assign:
+        The following URN, assigned under the "mef" namespace, remains
+        valid and unchanged:
       </t>
       <ul empty="true">
-        <li>urn:mplify:lso:spec:product</li>
-        <li>urn:mplify:lso:spec:service</li>
+        <li>urn:mef:lso:spec:sonata:access-eline-ovc:v5.0.0:all</li>
+      </ul>
+      <t>
+        A hypothetical next version of that resource would be
+        identified in the "mplify" namespace as:
+      </t>
+      <ul empty="true">
+        <li>urn:mplify:lso:spec:sonata:access-eline-ovc:v6.0.0:all</li>
       </ul>
     </section>
 
@@ -222,8 +391,9 @@
 	There are no additional security considerations other than
 	those normally associated with the use and resolution of URNs
 	in general, which are described in <xref
-	target="RFC1737">Function Requirements for URN</xref>, <xref
-	target="RFC8141">Uniform Resource Names (URNs)</xref>.
+	target="RFC1737">Functional Requirements for Uniform Resource
+	Names</xref> and <xref target="RFC8141">Uniform Resource Names
+	(URNs)</xref>.
       </t>
     </section>
 
@@ -245,6 +415,7 @@
     <references title="Informative References">
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.1737.xml"/>
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7818.xml"/>
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7950.xml"/>
     </references>
   </back>
 </rfc>
