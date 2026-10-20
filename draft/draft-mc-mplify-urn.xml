@@ -225,7 +225,7 @@
             example "v2.0.0". The version segment may be followed by
             further segments that identify parts of that version. For
             such resources, an NSS without the version segment (for
-            example, "urn:mplify:lso:spec:sonata:access-eline-ovc") is a level in
+            example, "lso:spec:sonata:access-eline-ovc") is a level in
             the registry hierarchy and does not itself identify a
             resource.
           </t>
@@ -378,8 +378,8 @@
         <li>urn:mef:lso:spec:sonata:access-eline-ovc:v5.0.0:all</li>
       </ul>
       <t>
-        A hypothetical next version of that resource, and one of its
-        parts, would be identified in the "mplify" namespace as:
+        A hypothetical next version of that resource would be
+        identified in the "mplify" namespace as:
       </t>
       <ul empty="true">
         <li>urn:mplify:lso:spec:sonata:access-eline-ovc:v6.0.0:all</li>
