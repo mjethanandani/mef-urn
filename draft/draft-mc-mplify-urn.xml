@@ -40,7 +40,15 @@
         <uri/>
       </address>
     </author>
+    <author fullname="Michał Łączyński" initials="M."
+            surname="Łączyński">
+      <organization>Amartus</organization>
 
+      <address>
+        <email>michal.laczynski@amartus.com</email>
+        <uri/>
+      </address>
+    </author>
     <date/>
 
     <abstract>
