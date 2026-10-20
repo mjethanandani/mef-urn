@@ -31,6 +31,24 @@
       </address>
     </author>
 
+    <author fullname="Charles Eckel" initials="C."
+            surname="Eckel">
+      <organization>Cisco Systems, Inc</organization>
+
+      <address>
+        <email>eckelcu@cisco.com</email>
+        <uri/>
+      </address>
+    </author>
+    <author fullname="Michał Łączyński" initials="M."
+            surname="Łączyński">
+      <organization>Amartus</organization>
+
+      <address>
+        <email>michal.laczynski@amartus.com</email>
+        <uri/>
+      </address>
+    </author>
     <date/>
 
     <abstract>
