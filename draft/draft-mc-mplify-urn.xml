@@ -41,7 +41,7 @@
 	resources that utilize this URN identification model. This URN
 	namespace will complement the existing "mef" URN namespace
 	registered in RFC 7818. Management activities for these and
-	other resources types are handled by the manager of the Mplify
+	other resource types are handled by the manager of the Mplify
 	Assigned Names and Numbers (MANN) registry.
       </t>
     </abstract>
@@ -82,8 +82,11 @@
       <t>
 	The existing "mef" URN namespace remains valid. URNs
 	previously assigned under "urn:mef:*" continue to be valid and
-	will not be reassigned or retired. New resources will be
-	assigned URNs under the "mplify" namespace.
+	will not be reassigned or retired. However, no new assignments 
+	will be made under ‘mef’. Any new resources will be
+	assigned URNs under the "mplify" namespace. URNs under ‘mef’ 
+	and ‘mplify’ are distinct identifiers. No equivalence is 
+	implied between urn:mef:X and urn:mplify:X.
       </t>
       <section title="Terminology">
         <table>
@@ -187,7 +190,7 @@
       <t>Resolution:</t>
       <ul empty="true">
         <li>
-          The namespace is not listed with an Resolution Discovery
+          The namespace is not listed with a Resolution Discovery
           System (RDS). Therefore this process is not relevant.
         </li>
       </ul>
