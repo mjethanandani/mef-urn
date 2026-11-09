@@ -182,6 +182,59 @@
 
       <t>Purpose:</t>
       <ul empty="true">
+        <li>
+          <t>
+            Mplify Alliance (https://www.mplify.net/), formerly MEF
+            Forum, is a global alliance of enterprises, service
+            providers, cloud providers, data center operators,
+            technology providers, and systems integrators, working
+            together to accelerate the AI-powered digital economy
+            through standardization, automation, certification, and
+            collaboration.
+          </t>
+          <t>
+            Mplify is the defining body for Carrier Ethernet, Lifecycle
+            Service Orchestration (LSO) APIs, and certified SASE and
+            SD-WAN. Mplify has developed the global blueprint for
+            Network-as-a-Service (NaaS) that is empowering the industry
+            to innovate, interoperate, and scale trusted network
+            services across a global ecosystem.
+          </t>
+          <t>
+            In June 2025, MEF Forum became Mplify Alliance. The
+            "mplify" URN namespace is being registered to provide
+            persistent, unique identifiers for resources published
+            under the Mplify Alliance brand, complementing the existing
+            "mef" URN namespace registered in
+            <xref target="RFC7818"/>.
+          </t>
+          <t>
+            The "mplify" namespace will be used to identify resources
+            such as:
+          </t>
+          <ul>
+            <li>YANG modules and data models</li>
+            <li>
+              LSO (Lifecycle Service Orchestration) API specifications
+            </li>
+            <li>
+              Product schemas and product specification identifiers
+            </li>
+            <li>Certification programs and artifacts</li>
+            <li>Service definitions and standards</li>
+            <li>
+              Any other resources that require managed, persistent
+              identification as part of Mplify Alliance activities
+            </li>
+          </ul>
+          <t>
+            The existing "mef" URN namespace
+            (<xref target="RFC7818"/>) remains valid. URNs previously
+            assigned under "urn:mef:*" continue to be valid and will
+            not be reassigned or retired. New resources will be
+            assigned URNs under the "mplify" namespace.
+          </t>
+        </li>
       </ul>
 
       <t>Syntax:</t>
@@ -201,9 +254,58 @@
       </ul>
       <t>Security and Privacy:</t>
       <ul empty="true">
+        <li>
+          <t>
+            There are no additional security considerations other than
+            those normally associated with the use and resolution of
+            URNs in general, which are described in
+            <xref target="RFC8141"/>.
+          </t>
+          <t>
+            URNs in the "mplify" namespace identify publicly available
+            specifications, data models, and related resources. These
+            URNs do not themselves contain or expose private or
+            personally identifiable information.
+          </t>
+          <t>
+            Since the "mplify" namespace assigns URNs to publicly
+            available resources, directory harvesting is not a
+            significant concern.
+          </t>
+          <t>
+            Mplify Alliance does not assign URNs based on information
+            that could be used to track individuals or compromise
+            privacy.
+          </t>
+        </li>
       </ul>
       <t>Interoperability:</t>
       <ul empty="true">
+        <li>
+          <t>
+            The "mplify" namespace coexists with the "mef" namespace
+            registered in <xref target="RFC7818"/>. URNs previously
+            assigned under "urn:mef:*" remain valid and are unaffected
+            by this registration.
+          </t>
+          <t>
+            Mplify Alliance will maintain clear documentation in the
+            MANN registry (https://www.mplify.net/MANN/) to distinguish
+            resources identified under the "mplify" namespace from
+            those under the legacy "mef" namespace, avoiding ambiguity.
+          </t>
+          <t>
+            Where a resource was originally identified by a
+            "urn:mef:*" URN, that URN will not be reassigned or
+            duplicated under "urn:mplify:*" unless explicitly
+            documented as an equivalence mapping in the MANN registry.
+          </t>
+          <t>
+            The hierarchical NSS structure is designed to avoid
+            conflicts with other URN namespaces, URI schemes, and
+            non-URN identifier systems.
+          </t>
+        </li>
       </ul>
       <t>Resolution:</t>
       <ul empty="true">
@@ -222,9 +324,30 @@
       </ul>
       <t>Additional Information:</t>
       <ul empty="true">
+        <li>
+          <t>
+            Mplify Alliance (formerly MEF Forum) rebranded in June
+            2025.
+          </t>
+          <t>
+            The "mef" URN namespace (<xref target="RFC7818"/>) was
+            registered when the organization was known as MEF Forum.
+            The "mplify" namespace is registered to reflect the new
+            organizational identity while preserving the validity and
+            persistence of all existing "urn:mef:*" assignments.
+          </t>
+          <t>
+            The MANN registry (https://www.mplify.net/MANN/) serves as
+            the authoritative source for all URN assignments under both
+            the "mef" and "mplify" namespaces.
+          </t>
+        </li>
       </ul>
       <t>Revision Information:</t>
       <ul empty="true">
+        <li>
+          This is the initial registration; no prior versions exist.
+        </li>
       </ul>
     </section>
 
@@ -260,12 +383,17 @@
   </middle>
 
   <back>
-    <references title="Normative References">
-      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8141.xml"/>
-    </references>
-    <references title="Informative References">
-      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.1737.xml"/>
-      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7818.xml"/>
+    <references>
+      <name>References</name>
+      <references>
+        <name>Normative References</name>
+        <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8141.xml"/>
+      </references>
+      <references>
+        <name>Informative References</name>
+        <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.1737.xml"/>
+        <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7818.xml"/>
+      </references>
     </references>
   </back>
 </rfc>
